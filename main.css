@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+
+header h1 {
+  background-color: gray;
+  color: white;
+  font-size: 4em;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  margin: 0;
+}
+
+#settings {
+  margin: 10px;
+}
+
+#settings label {
+  display: inline-block;
+  min-width: 75px;
+}
+
+#settings select,
+#settings input {
+  box-sizing: border-box;
+  width: 120px;
+}
+
+#repos {
+  margin: 10px;
+  padding: 0;
+  list-style-type: none;
+}
+
+#repos li {
+  display: inline-block;
+  width: 25%;
+}
+
+@media (max-width: 960px) {
+  #repos li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  #repos li {
+    width: 100%;
+  }
+}
+
+#repos li a {
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid white;
+  transition: border-color 1s;
+}
+
+#repos li.has-issues a {
+  background-color: orange;
+}
+
+#repos li a:hover {
+  border: 2px solid gray;
+}

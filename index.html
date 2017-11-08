@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>GitHub Repos</title>
+</head>
+<body>
+  <header>
+    <h1>GitHub Repos</h1>
+  </header>
+  <form id="settings">
+    <p>
+      <label for="language">Language:</label>
+      <select id="language">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="c++">C++</option>
+      </select>
+    </p>
+    <p>
+      <label for="user">User:</label>
+      <input type="text" id="user" placeholder="google"
+        required pattern="[A-Za-z0-9-]+">
+    </p>
+    <p>
+      <button type="submit">Get Repos</button>
+    </p>
+  </form>
+  <ul id="repos"></ul>
+  <script src="main.js"></script>
+</body>
+</html>
