@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log('content loaded');
   document.getElementById('settings').addEventListener('submit', event => {
+    console.log('form submitted');
     event.preventDefault();
     let language = document.getElementById('language').value;
     let user = document.getElementById('user').value;
